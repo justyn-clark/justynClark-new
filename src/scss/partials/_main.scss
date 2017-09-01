@@ -1,0 +1,28 @@
+.main {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  .main__logo {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .main__button {
+  }
+}
+
+.block {
+  text-align: center;
+}
+
+.section {
+  li {
+    list-style: none;
+  }
+  .list {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}

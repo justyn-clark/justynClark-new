@@ -1,0 +1,57 @@
+{
+  "name": "initiator",
+  "title": "The modern front-end boilerplate of the future",
+  "url": "http://initiator.justynclark.com",
+  "author": "Justyn Clark",
+  "copyright": "2017",
+  "version": "1.0.0",
+  "license": "MIT",
+  "browserslist": [
+    "> 1%"
+  ],
+  "repository": "git+https://github.com/justyn-clark/initiator.git",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-flow": "^6.23.0",
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.1.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-compat": "^1.0.4",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "flow-bin": "^0.49.1",
+    "husky": "^0.14.2",
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^4.1.0",
+    "uglify-js": "^2.7.4",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "eventemitter2": "^4.1.2",
+    "jquery": "^3.1.1"
+  },
+  "scripts": {
+    "start": "npm-run-all -p sync watch:css build:js",
+    "test": "eslint src/js && flow && jest --coverage",
+    "test:2": "eslint src/js",
+    "sync": "browser-sync start --server --files \"*.html, app/bundle.js, app/app.css\"",
+    "build:js": "babel src/js -w --out-file app/bundle.js --source-maps --presets env",
+    "build:css": "node-sass --include-path scss src/**/*.scss app/app.css",
+    "build": "npm run build:js && npm run build:css",
+    "postcss": "postcss --use autoprefixer -o app/app.css app/app.css",
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "precommit": "yarn test",
+    "prepush": "yarn test",
+    "babel-node": "babel-node src/js"
+  },
+  "main": "index.js"
+}

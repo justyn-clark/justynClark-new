@@ -1,0 +1,113 @@
+.posts-feed {
+  display: grid;
+  .posts-post {
+    width: 50%;
+    min-height: 350px;
+    display: table;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    .posts-post {
+      width: 100%;
+    }
+  }
+}
+
+.posts-feed .posts-post:hovers .posts-image,
+.posts-feed .posts-post:focus .posts-image {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+}
+.posts-feed .posts-post:hover .posts-post-content a,
+.posts-feed .posts-post:focus .posts-post-content a {
+  background-color: rgba(206, 18, 24, 0.62);
+  border: none;
+}
+.posts-feed .posts-post:hover .posts-post-content a .content-inner,
+.posts-feed .posts-post:focus .posts-post-content a .content-inner {
+  border-color: transparent;
+}
+.posts-feed .posts-post:hover .posts-post-content a .content-inner:before,
+.posts-feed .posts-post:focus .posts-post-content a .content-inner:before,
+.posts-feed .posts-post:hover .posts-post-content a .content-inner:after,
+.posts-feed .posts-post:focus .posts-post-content a .content-inner:after {
+  background-color: transparent;
+}
+.posts-feed .posts-post .posts-image {
+  width: 103%;
+  height: 365px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  top: -8px;
+  left: -8px;
+}
+.posts-feed .posts-post .posts-post-content {
+  position: relative;
+  padding: 2% 0% 2% 10%;
+  text-align: left;
+  z-index: 2;
+  margin: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+.posts-feed .posts-post .posts-post-content a {
+  display: block;
+  width: 90%;
+}
+.posts-feed .posts-post .posts-post-content .content-inner {
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  padding: 50px 5%;
+  border-left: 0;
+  margin-left: 50px;
+}
+.posts-feed .posts-post .posts-post-content .content-inner:before,
+.posts-feed .posts-post .posts-post-content .content-inner:after {
+  content: " ";
+  height: 30px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.38);
+  position: absolute;
+  margin: -50px -4.1%;
+}
+.posts-feed .posts-post .posts-post-content .content-inner:after {
+  margin: 20px -4.1%;
+}
+.posts-feed .posts-post .posts-post-content .content-inner .content {
+  margin-left: -50px;
+}
+@media screen and (max-width: 768px) {
+  .posts-feed .posts-post .posts-post-content .content-inner .content {
+    padding: 6% 0;
+  }
+}
+.posts-feed .posts-post .posts-post-content .content-inner .content h2 {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.posts-feed .posts-post .posts-post-content .content-inner .content .time {
+  border-bottom: 2px solid #ce1218;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #ffffff;
+  padding-bottom: 3px;
+}
+.noblur {
+  -webkit-filter: blur(0px) !important;
+  -moz-filter: blur(0px) !important;
+  -o-filter: blur(0px) !important;
+  -ms-filter: blur(0px) !important;
+  filter: blur(0px) !important;
+}
