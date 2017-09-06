@@ -4,7 +4,7 @@ var JC = JC || {};
 
   var countdown = JC.countdown = {};
 
-  var targetDate = "Sept 1, 2017 10:00:00"; // Set the date we're counting down to
+  var targetDate = "Oct 3, 2017 08:30:00"; // Set the date we're counting down to
 
   countdown.init = function () {
     setupClock();
@@ -30,7 +30,7 @@ var JC = JC || {};
       var hours     = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes   = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds   = Math.floor((distance % (1000 * 60)) / 1000);
-      document.querySelector('.counter').innerHTML = digit(days) + ":" + digit(hours) + ":" + digit(minutes) + ":" + digit(seconds);
+      document.querySelector('.counter').innerHTML = units(days) + ":" + units(hours) + ":" + units(minutes) + ":" + units(seconds);
       if (distance < 0) {
         clearInterval(clock);
         document.querySelector('.counter').innerHTML = "NOW LIVE" // End countdown and display message
@@ -39,7 +39,7 @@ var JC = JC || {};
   };
 
 
-  var digit = function(n) {
+  var units = function(n) {
     return n > 9 ? "" + n : "0" + n;
   };
 
