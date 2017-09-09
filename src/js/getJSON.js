@@ -41,6 +41,6 @@
     });
   };
 
-  //EVT.on('init', postsFeed)
+  EVT.on('init', postsFeed)
 
 })(jQuery, JC)
