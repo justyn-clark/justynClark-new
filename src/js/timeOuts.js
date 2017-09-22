@@ -1,9 +1,5 @@
 (function(JC) {
 
-  JC.utils.thisCheck = function() {
-    console.log(this);
-  }
-
   JC.utils.twoSecTO = () => {
     setTimeout(()=> {
       console.log('Emit twoSecTO event')
@@ -19,8 +15,8 @@
     }, 4000)
   }
 
-  //EVT.on('init', JC.utils.twoSecTO)
-  //EVT.on('TO1', JC.utils.fourSecTO)
-  //EVT.on('check', JC.utils.thisCheck)
+  EVT.on('init', JC.utils.twoSecTO)
+  EVT.on('TO1', JC.utils.fourSecTO)
+  EVT.on('check', JC.utils.thisCheck)
 
 })(JC);
