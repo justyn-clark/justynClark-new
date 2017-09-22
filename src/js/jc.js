@@ -10,7 +10,7 @@ if (typeof JC === "undefined") {
   var components = JC.components = {};
   var menu = JC.menu = {};
 
-  config.project = 'arrayWorkout'
+  config.project = 'justynClark-new'
   config.developer = 'justyn clark'
   config.version = "1.0.0"
 
@@ -50,8 +50,14 @@ if (typeof JC === "undefined") {
     cookieMap = null;
   };
 
+  // this checker
+  utils.thisCheck = function() {
+    console.log(this);
+  }
 
-
+  utils.randomNumber = function() {
+    return Math.floor(Math.random() * 1000)
+  };
   // Character count in Element
   utils.charsInElement = elm => {
     if (elm.nodeType == 3) { // TEXT_NODE
@@ -97,15 +103,18 @@ if (typeof JC === "undefined") {
     request.onreadystatechange = function() {
       if ((request.readyState === 4) && (request.status === 200)) {
         var data = JSON.parse(request.responseText);
+        console.log(data);
         localStorage.setItem('data', JSON.stringify(data));
 
-        for(var i = 0; i < data.length; i++){
+        for(let i = 0; i < data.length; i++){
           console.log(data[i].name)
+
+          var names = data[i].name + "<br>" + data[i].email;
+
         }
 
-        document.querySelector('[rel=copySection]').innerHTML =
-          data[9].name + "<br>" +
-          data[9].email;
+        document.querySelector('[rel=copySection]').innerHTML = names
+
       }
     }
     request.send();
@@ -142,6 +151,7 @@ if (typeof JC === "undefined") {
     var init = () => {}
 
   EVT.on('init', clickHandlers)
+  EVT.on('init', loadNames)
 
 })(JC);
 
