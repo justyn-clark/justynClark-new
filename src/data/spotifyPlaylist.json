@@ -1,0 +1,628 @@
+{
+  "href" : "https://api.spotify.com/v1/users/125458843/playlists?offset=0&limit=20",
+  "items" : [ {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/6WmKl0nRR12NnMRCRTJQAE"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/6WmKl0nRR12NnMRCRTJQAE",
+    "id" : "6WmKl0nRR12NnMRCRTJQAE",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/17e68a2e03de74a114bf6609d69f9bdbf6029f70",
+      "width" : 640
+    } ],
+    "name" : "Post Malone – Stoney (Deluxe)",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "cPU5UYMBLVUgjd9ih/kKs8HyGdBA5wHPjVQ6FYmVgZLRcjG5zhQ9j/XRm8SxRP6h",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/6WmKl0nRR12NnMRCRTJQAE/tracks",
+      "total" : 18
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:6WmKl0nRR12NnMRCRTJQAE"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/52v31PF1AKxUGDIl7e0Rnf"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/52v31PF1AKxUGDIl7e0Rnf",
+    "id" : "52v31PF1AKxUGDIl7e0Rnf",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/443372cd2c6d4245833fb46ac1c5dabca00c78a9",
+      "width" : 640
+    } ],
+    "name" : "Kanye West – The Life Of Pablo",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "0OpzLpOhofQDzbmy5CEDoBTtj8/RIMBC8FvMz//zulAdNIcJiTFXkjkKfb2osk6o",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/52v31PF1AKxUGDIl7e0Rnf/tracks",
+      "total" : 18
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:52v31PF1AKxUGDIl7e0Rnf"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/5d2sQUUdb8n0Qzb7Wjt27F"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/5d2sQUUdb8n0Qzb7Wjt27F",
+    "id" : "5d2sQUUdb8n0Qzb7Wjt27F",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/dcbcdcc8bf4dfd9842e3d844d7a943713f0e0585",
+      "width" : 640
+    } ],
+    "name" : "J. Cole – 4 Your Eyez Only",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "SLcQidUGvrSAAHMBWnCW1YGyMKhbQSsiCF2kuY+NB7rOeNTV+9oQJWBlBuiNvB9/",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/5d2sQUUdb8n0Qzb7Wjt27F/tracks",
+      "total" : 10
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:5d2sQUUdb8n0Qzb7Wjt27F"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/myplay.com/playlist/3ZSq7rHkmA5m0suVh5z8lM"
+    },
+    "href" : "https://api.spotify.com/v1/users/myplay.com/playlists/3ZSq7rHkmA5m0suVh5z8lM",
+    "id" : "3ZSq7rHkmA5m0suVh5z8lM",
+    "images" : [ {
+      "height" : null,
+      "url" : "https://pl.scdn.co/images/pl/default/918641e7eb53353a63900683da399b619bdf2ef2",
+      "width" : null
+    } ],
+    "name" : "Hip Hop Made Me",
+    "owner" : {
+      "display_name" : "Filtr US",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/myplay.com"
+      },
+      "href" : "https://api.spotify.com/v1/users/myplay.com",
+      "id" : "myplay.com",
+      "type" : "user",
+      "uri" : "spotify:user:myplay.com"
+    },
+    "public" : true,
+    "snapshot_id" : "Hn2SKk0rQqmL99N71l0MIXgpi+soIAGJN2Iu4fcT2LockJ4N9f3qzBoOw4D2N9MQ",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/myplay.com/playlists/3ZSq7rHkmA5m0suVh5z8lM/tracks",
+      "total" : 60
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:myplay.com:playlist:3ZSq7rHkmA5m0suVh5z8lM"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/6OiKRqbp4qM8KYGcQAxsTn"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/6OiKRqbp4qM8KYGcQAxsTn",
+    "id" : "6OiKRqbp4qM8KYGcQAxsTn",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/6fd7705096575249c34c2ac67e389e3f6cf76450",
+      "width" : 640
+    } ],
+    "name" : "Kool Keith – Matthew",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "ciNKf6dF2YSYpRoBa+a8id7n6sK0eYYncQglSruBVQH/mN09pHMfV3bBoBBl8Ps0",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/6OiKRqbp4qM8KYGcQAxsTn/tracks",
+      "total" : 17
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:6OiKRqbp4qM8KYGcQAxsTn"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/1mfEmqAryIXOm2CkhkMVBa"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/1mfEmqAryIXOm2CkhkMVBa",
+    "id" : "1mfEmqAryIXOm2CkhkMVBa",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/90db05c562b14f2e234f3e510ea81cee24217098",
+      "width" : 640
+    } ],
+    "name" : "Wu-Tang Clan – Wu-Tang Killa Bees: The Swarm",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "FRlLt3EUQqXy4fbTcai3kgdcOS53S4GMCszeB9yk4FAnjCqYgWDhpOPzAoAmzpDR",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/1mfEmqAryIXOm2CkhkMVBa/tracks",
+      "total" : 14
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:1mfEmqAryIXOm2CkhkMVBa"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/4VSUz83Z3I8vGTKcJqRVYX"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/4VSUz83Z3I8vGTKcJqRVYX",
+    "id" : "4VSUz83Z3I8vGTKcJqRVYX",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/1f0924a19a2045056310f2371ce3afd128cb525f",
+      "width" : 640
+    } ],
+    "name" : "Logic – The Incredible True Story",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "R3q++jr2zfw0v/KYQFIjX+4ixtuX+Zq6IZW0SaHDPZmiYLMYa32xICToZdCCpDiT",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/4VSUz83Z3I8vGTKcJqRVYX/tracks",
+      "total" : 18
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:4VSUz83Z3I8vGTKcJqRVYX"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/18iF10RFDKoJd1o8DaZoQ8"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/18iF10RFDKoJd1o8DaZoQ8",
+    "id" : "18iF10RFDKoJd1o8DaZoQ8",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/239e02754886e235e88ba6a9373e10bfa9e7c040",
+      "width" : 640
+    } ],
+    "name" : "GZA – Liquid Swords",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "ddddr8kMTXTVEVsmIu0HRVDOG9nN9PFgCyDIBU088QinlRow2PS7vk/AVNEk8Pjp",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/18iF10RFDKoJd1o8DaZoQ8/tracks",
+      "total" : 13
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:18iF10RFDKoJd1o8DaZoQ8"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/4yMrQkb2oJjFth2ksjL6ko"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/4yMrQkb2oJjFth2ksjL6ko",
+    "id" : "4yMrQkb2oJjFth2ksjL6ko",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/8ab1ffd5c44d15518cad7522cf2741f7d9295adc",
+      "width" : 640
+    } ],
+    "name" : "Robert Glasper – Black Radio",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "pxKrcvRYHmC2GfcOxIzDVNYhqowVldbjujiICzy1MrlOAKRwBnCaIOw8TSZeCWV0",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/4yMrQkb2oJjFth2ksjL6ko/tracks",
+      "total" : 12
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:4yMrQkb2oJjFth2ksjL6ko"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/7zZj5FZT1ly1KaKt1hZF8G"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/7zZj5FZT1ly1KaKt1hZF8G",
+    "id" : "7zZj5FZT1ly1KaKt1hZF8G",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/02aa2ba2716a2db6c1b3abfdfe8d550599cb17a2",
+      "width" : 640
+    } ],
+    "name" : "Robert Glasper Experiment - Black Radio 2",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "r0HMZmk8zE70v11uLBAv8gfkV0cblJ0C6Y7fpAQN8qbgW3e4UB+oxweMM7ymNbOA",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/7zZj5FZT1ly1KaKt1hZF8G/tracks",
+      "total" : 16
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:7zZj5FZT1ly1KaKt1hZF8G"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/0mbIOFkfeadxdqDfx2xS0D"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/0mbIOFkfeadxdqDfx2xS0D",
+    "id" : "0mbIOFkfeadxdqDfx2xS0D",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/a39fdb2d97a6a1c38be6b9de6001498b39bbbb92",
+      "width" : 640
+    } ],
+    "name" : "Robert Glasper - Double Booked",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "mZo0oLeQTxPp3XIlEECGaXzHawOcfnX+HrSHDouKAi2wRSMmn1/Ii3Ao5IR5HbMq",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/0mbIOFkfeadxdqDfx2xS0D/tracks",
+      "total" : 12
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:0mbIOFkfeadxdqDfx2xS0D"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/04UCNSzjAEvzky0dgUZAF7"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/04UCNSzjAEvzky0dgUZAF7",
+    "id" : "04UCNSzjAEvzky0dgUZAF7",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/1ded0da7d6eccb4712be66920d910190c175f251",
+      "width" : 640
+    } ],
+    "name" : "Robert Glasper - Canvas",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "6LwIjQthn20u++O1OjldX/KHGUBIxBxnwdX0RQrO3aGISlhnUrHM+PCKpeUxPWp4",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/04UCNSzjAEvzky0dgUZAF7/tracks",
+      "total" : 10
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:04UCNSzjAEvzky0dgUZAF7"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/2tbkrODQSFw5JgZjFSUSTQ"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/2tbkrODQSFw5JgZjFSUSTQ",
+    "id" : "2tbkrODQSFw5JgZjFSUSTQ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/5825ada59d9a7092d78d21a8c8b7cb9d7c7506ca",
+      "width" : 640
+    } ],
+    "name" : "Robert Glasper – Black Radio Recovered: The Remix EP",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "fBrxy3snX8t2+lKkHPGEbEve030Qc+cE68ZBZKX4CwZMwqkrIKri/fXRm8SxRP6h",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/2tbkrODQSFw5JgZjFSUSTQ/tracks",
+      "total" : 6
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:2tbkrODQSFw5JgZjFSUSTQ"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/48lcu8M3h7itSVV9mtgcVd"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/48lcu8M3h7itSVV9mtgcVd",
+    "id" : "48lcu8M3h7itSVV9mtgcVd",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/fa8c12e449f0697fb5758f30ed0f098ebbebdb97",
+      "width" : 640
+    } ],
+    "name" : "Robert Glasper - In My Element",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "DUVBHxglLtClgTsMzNoZBST8F/rMjLCo4/UXjwSoF1W0P8QV+riX7gg0uxKd/DOm",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/48lcu8M3h7itSVV9mtgcVd/tracks",
+      "total" : 10
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:48lcu8M3h7itSVV9mtgcVd"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/7KZ67XLh68b8dBS6MU2IRx"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/7KZ67XLh68b8dBS6MU2IRx",
+    "id" : "7KZ67XLh68b8dBS6MU2IRx",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/e58797436efdcef1980e447771a8a805d8a545df",
+      "width" : 640
+    } ],
+    "name" : "Robert Glasper – Covered (The Robert Glasper Trio Recorded Live At Capitol Studios)",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "Z/YAkvcqzDK3AsxdCvp9h8Q5L2VkiHXeMLI5gpycIV2dP3bLrPHeFHbBoBBl8Ps0",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/7KZ67XLh68b8dBS6MU2IRx/tracks",
+      "total" : 11
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:7KZ67XLh68b8dBS6MU2IRx"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/08vcdnBIAgstTmwhV4nWO0"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/08vcdnBIAgstTmwhV4nWO0",
+    "id" : "08vcdnBIAgstTmwhV4nWO0",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/e73c706e842eb5233eab7afd3404218a2696d568",
+      "width" : 640
+    } ],
+    "name" : "Drake – Views",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "D8qWiblKvUu9hgwS4C7EFPMuPUp04VJtahRH42Wt69TGsSlrzxx+oKDAfIUvAoFb",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/08vcdnBIAgstTmwhV4nWO0/tracks",
+      "total" : 20
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:08vcdnBIAgstTmwhV4nWO0"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/5cYl8iKMT0H9sTMr9Ut6dZ"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/5cYl8iKMT0H9sTMr9Ut6dZ",
+    "id" : "5cYl8iKMT0H9sTMr9Ut6dZ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/77b0c91524867cc72d1974f66ad8cd21d063a20e",
+      "width" : 640
+    } ],
+    "name" : "Drake – What A Time To Be Alive",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "HNaIEVUPZgycuKT8U/GyZYXq6mk8W1x5vP/xof1m2uhB8saBTp0mqfXRm8SxRP6h",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/5cYl8iKMT0H9sTMr9Ut6dZ/tracks",
+      "total" : 10
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:5cYl8iKMT0H9sTMr9Ut6dZ"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/40rcQtRv0MN1Au2n4ptWsU"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/40rcQtRv0MN1Au2n4ptWsU",
+    "id" : "40rcQtRv0MN1Au2n4ptWsU",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/7247bc0f06b5019554b7209efcf6694e1b81ee34",
+      "width" : 640
+    } ],
+    "name" : "Drake – Nothing Was The Same",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "HtoVUrQPqCnwfMP8qkrIzVb4kMhLi48h1DKFa8Ad2c+18NIU7eZZR2jsOYWMNZKp",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/40rcQtRv0MN1Au2n4ptWsU/tracks",
+      "total" : 15
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:40rcQtRv0MN1Au2n4ptWsU"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/125458843/playlist/2aerYKzYHmkQl8whUgoQu6"
+    },
+    "href" : "https://api.spotify.com/v1/users/125458843/playlists/2aerYKzYHmkQl8whUgoQu6",
+    "id" : "2aerYKzYHmkQl8whUgoQu6",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/2edc8c89d1e7ae8b69841e4b8cb708f0683e32bd",
+      "width" : 640
+    } ],
+    "name" : "Drake – Take Care",
+    "owner" : {
+      "display_name" : "Justyn Clark",
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/125458843"
+      },
+      "href" : "https://api.spotify.com/v1/users/125458843",
+      "id" : "125458843",
+      "type" : "user",
+      "uri" : "spotify:user:125458843"
+    },
+    "public" : true,
+    "snapshot_id" : "n50Cu4gYSS7YaG9gGi88n6eIqArtdhsbvPI6T2fWZEHAUwPBTgFY7KFVYLKWtIkn",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/125458843/playlists/2aerYKzYHmkQl8whUgoQu6/tracks",
+      "total" : 18
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:125458843:playlist:2aerYKzYHmkQl8whUgoQu6"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/nshebib/playlist/4t0tjNFLuBpjh3a7JeczhE"
+    },
+    "href" : "https://api.spotify.com/v1/users/nshebib/playlists/4t0tjNFLuBpjh3a7JeczhE",
+    "id" : "4t0tjNFLuBpjh3a7JeczhE",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/951996bfa8083b0fa26a960ffcb2cb1d3682dd59",
+      "width" : 640
+    } ],
+    "name" : "PARTYNEXTDOOR – PARTYNEXTDOOR",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/nshebib"
+      },
+      "href" : "https://api.spotify.com/v1/users/nshebib",
+      "id" : "nshebib",
+      "type" : "user",
+      "uri" : "spotify:user:nshebib"
+    },
+    "public" : true,
+    "snapshot_id" : "5wJHIcDAYKXmt5GuH47pm3V0WkuR8HA8ve4dnM8TzcUMBgV9RTWGmz33HQZi6LUG",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/nshebib/playlists/4t0tjNFLuBpjh3a7JeczhE/tracks",
+      "total" : 10
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:nshebib:playlist:4t0tjNFLuBpjh3a7JeczhE"
+  } ],
+  "limit" : 20,
+  "next" : "https://api.spotify.com/v1/users/125458843/playlists?offset=20&limit=20",
+  "offset" : 0,
+  "previous" : null,
+  "total" : 103
+}
