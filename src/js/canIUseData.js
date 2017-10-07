@@ -1,16 +1,11 @@
-(function() {
-  'use strict';
+(function(JC) {
 
-  function getCSS() {
+  var canIData = document.querySelector('.canIData');
+  var clickBtn = document.querySelector('[rel="main__clicker"]');
 
-    function output(x) {
-      console.log(x);
-    }
-
-    var list = document.getElementById('list');
-    var canIData = document.querySelector('.canIData');
+  function init() {
     var p1 = new Promise(
-      function(resolve, reject) {
+      function(resolve) {
         var request;
         if (window.XMLHttpRequest) {
           request = new XMLHttpRequest();
@@ -19,64 +14,46 @@
         }
         request.open('GET', 'https://raw.githubusercontent.com/Fyrd/caniuse/master/data.json');
         request.onreadystatechange = function() {
-          if ((request.readyState===4) && (request.status===200)) {
-            const canIUseData = JSON.parse(request.responseText)
-            resolve(canIUseData)
-            console.log(canIUseData);
-
-            //output(data["css-grid"].categories)
-            /*window.setTimeout(      // Async
-             function res() {
-             var data = JSON.parse(request.responseText)
-             resolve(data)
-             console.log('Fake async setTimeout ended');
-             }, 3000);*/
-
+          if ((request.readyState === 4) && (request.status === 200)) {
+            const canIUseData = JSON.parse(request.responseText);
+            resolve(canIUseData);
+            JC.utils.output(canIUseData.data);
           }
         }
         request.send();
       });
     p1
       .then(canIUseData => {
-
-
-        // Logs
-        var title = canIUseData.data.video.title;
-        var description = canIUseData.data.video.description;
-        var linkUrl = canIUseData.data["es6-module"].links[1].url;
-
+        var titles= "";
         var ul = document.createElement("ul");
         var catsCSS = canIUseData.cats.CSS;
 
-        //canIData.appendChild(ul);
-
         catsCSS.forEach(function(index,item) {
-          var cssList = '<p>' + index + ' ' + item + '</p>';
-          console.log(index + ' ' + item);
+          var cssList = '<li>' + index + ' ' + item + '</li>';
           canIData.appendChild(ul);
           ul.insertAdjacentHTML('afterbegin', cssList);
-        })
-        ul.insertAdjacentHTML('afterend', "<br>" + title + "<br>" + description + "<br>" + "<a href='#'>" + linkUrl + "</a>" + "<br>");
-        console.log(catsCSS);
-      })
-      .then(()=> canIData.insertAdjacentHTML('afterbegin', "<h1>Top Modern Features</h1>"))
-      .catch(
-        function(reason) {
-          //console.log(reason);
         });
+
+        for (let i in canIUseData.data) {
+          titles += "<div class='data__item'>"
+          titles += "<h3>" + canIUseData.data[i].title + "</h3>"
+          titles += "<p>" + canIUseData.data[i].description + "</p>"
+          titles += "<a href=" + canIUseData.data[i].links[0].url + ">" + canIUseData.data[i].links[0].url + "</a>"
+          titles += "</div>"
+        }
+
+        ul.insertAdjacentHTML('afterend', titles);
+
+        })
+      .then(()=> canIData.insertAdjacentHTML('afterbegin', "<h1>Top Modern Features</h1>"))
   }
 
-  var clickBtn = document.querySelector('[rel="main__clicker"]');
-  clickBtn.addEventListener("click", getCSS);
+  clickBtn.addEventListener("click", init);
 
-  EVT.on("init", getCSS)
-
-  /*if ("Promise" in window) {   // Check for Promise on window
-   var btn = document.getElementById("btn");
-   btn.addEventListener("click",testPromise);
+  if ("Promise" in window) {   // Check for Promise on window
+    EVT.on("init", init);
    } else {
-   var log = document.getElementById('log');
-   log.innerHTML = "Live example not available as your browser doesn't support the <code>Promise<code> interface.";
-   }*/
+     JC.utils.output('Your browser doesn\'t support the <code>Promise<code> interface.');
+   }
 
-})();
+})(JC);
