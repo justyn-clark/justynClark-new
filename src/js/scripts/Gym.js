@@ -1,12 +1,6 @@
-/**
- * Created by jujohnson on 7/6/17.
- */
-
-JC = JC || {};
-
-const gym = JC.gym = {};
 
 (function(JC) {
+  const gym = JC.gym = {};
   gym.LAFitness = {};
   gym.TFFitness = {};
   gym.Golds = {};

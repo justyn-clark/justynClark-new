@@ -38,7 +38,7 @@
     "build:js": "babel src/js/scripts -w --out-file app/scripts.js --source-maps --presets env",
     "build:css": "node-sass --include-path scss src/**/*.scss app/app.css",
     "build": "npm run build:js && npm run build:css",
-    "bundle": "watchify src/js/modules/app.js -t [ babelify --presets [ env ] ] --outfile app/bundle.js -v",
+    "bundle": "watchify src/js/modules/app.js -d -t [ babelify  --presets [ env ] ] --outfile app/bundle.js -v",
     "postcss": "postcss --use autoprefixer -o app/app.css app/app.css",
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
     "precommit": "yarn test",

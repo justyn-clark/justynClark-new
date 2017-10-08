@@ -1,7 +1,11 @@
-(function (global) {
+//import jQuery from 'jquery';
+//import EventEmitter2 from 'eventemitter2';
+
+(function(global, $){
   // Set up global variables
   global.JC = global.JC !== undefined ? JC : {};
 
+  $('.poo');
   JC.config = {};
   JC.utils = {};
   JC.components = {};
@@ -9,7 +13,8 @@
 
   global.EVT = new EventEmitter2();
 
-  global.addEventListener('DOMContentLoaded', function () {
+  global.addEventListener('DOMContentLoaded', function() {
     EVT.emit('init');
   });
-})(window);
+
+})(window, jQuery);

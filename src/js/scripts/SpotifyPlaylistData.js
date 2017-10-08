@@ -8,11 +8,11 @@
     });
   }
 
-  getUserData()
+  /*getUserData()
     .then(function (response) {
       console.log(response);
       localStorage.setItem('playlists', JSON.stringify(response))
-    })
+    })*/
 })(JC);
 
 

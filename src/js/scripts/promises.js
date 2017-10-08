@@ -31,11 +31,11 @@ function ajaxProm(url) {
   });
 
   myFirstPromise
-    .then((repos) => console.log(repos[5].name))
+    .then((repos) => console.log(repos[2].name))
     .catch((error) => console.log(error.message))
 }
 
-ajaxProm('https://api.github.com/users/justyn-clark/repos');
+//ajaxProm('https://api.github.com/users/justyn-clark/repos');
 
 
 /*

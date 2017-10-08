@@ -1,3 +1,20 @@
 .canIData {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
   text-align: left;
+  grid-column: 1/6;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
+  @media screen and (min-width: 960px) {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  .data__item {
+    padding: 0 2.5rem;
+    overflow: hidden;
+    background-color: bisque;
+    border: 1px solid;
+  }
 }

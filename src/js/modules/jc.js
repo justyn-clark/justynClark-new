@@ -1,8 +1,3 @@
-// Declare global object
-if (typeof JC === "undefined") {
-  var JC = JC || {};
-}
-
 ((JC) => {
   // Set up variables
   var config = JC.config = {};
@@ -10,9 +5,9 @@ if (typeof JC === "undefined") {
   var components = JC.components = {};
   var menu = JC.menu = {};
 
-  config.project = 'justynClark-new'
-  config.developer = 'justyn clark'
-  config.version = "1.0.0"
+  config.project = 'justynClark-new';
+  config.developer = 'justyn clark';
+  config.version = "1.0.0";
 
   var cookieMap;
   // Cookies
@@ -58,6 +53,11 @@ if (typeof JC === "undefined") {
   utils.randomNumber = function() {
     return Math.floor(Math.random() * 1000)
   };
+
+  utils.output = function(x) {
+    console.log(x);
+  }
+
   // Character count in Element
   utils.charsInElement = elm => {
     if (elm.nodeType == 3) { // TEXT_NODE
@@ -152,6 +152,8 @@ if (typeof JC === "undefined") {
 
   EVT.on('init', clickHandlers)
   EVT.on('init', loadNames)
+
+  return JC;
 
 })(JC);
 

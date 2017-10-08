@@ -1,10 +1,8 @@
-var JC = JC || {};
-
 (function(JC) {
 
   var countdown = JC.countdown = {};
 
-  var targetDate = "Oct 3, 2017 08:30:00"; // Set the date we're counting down to
+  var targetDate = "Oct 10, 2017 08:30:00"; // Set the date we're counting down to
 
   countdown.init = function () {
     setupClock();
