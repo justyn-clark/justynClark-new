@@ -139,16 +139,16 @@
   }
 
   setTimeout(()=> {
-     if (!document.cookie.match('jcCookie')) {
-       document.querySelector('.cookie-policy').classList.add('cookie-policy--show');
-     } else {
-       console.log('cookie policy is hidden');
-       document.querySelector('.cookie-policy').classList.add('cookie-policy--hide');
-     }
+    if (!document.cookie.match('jcCookie')) {
+      document.querySelector('.cookie-policy').classList.add('cookie-policy--show');
+    } else {
+      console.log('cookie policy is hidden');
+      document.querySelector('.cookie-policy').classList.add('cookie-policy--hide');
+    }
   },1000);
 
   // init function
-    var init = () => {}
+  var init = () => {}
 
   EVT.on('init', clickHandlers)
   EVT.on('init', loadNames)
@@ -161,6 +161,6 @@
 
 
 {
-let code = "</code>";
+  let code = "</code>";
 //console.log(`I'm executing ${code} immediately!`);
 }

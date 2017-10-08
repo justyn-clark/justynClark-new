@@ -32,18 +32,16 @@
     "jquery": "^3.1.1"
   },
   "scripts": {
-    "start": "npm-run-all -p sync watch:css build:js bundle",
+    "start": "npm-run-all -p sync watch:css bundle",
     "test": "eslint src/js",
     "sync": "browser-sync start --server --files \"*.html, app/bundle.js, app/app.css\"",
-    "build:js": "babel src/js/scripts -w --out-file app/scripts.js --source-maps --presets env",
     "build:css": "node-sass --include-path scss src/**/*.scss app/app.css",
-    "build": "npm run build:js && npm run build:css",
-    "bundle": "watchify src/js/modules/app.js -d -t [ babelify  --presets [ env ] ] --outfile app/bundle.js -v",
+    "build": "npm run bundle && npm run build:css",
+    "bundle": "watchify src/app.js -d -t [ babelify  --presets [ env ] ] --outfile app/bundle.js -v",
     "postcss": "postcss --use autoprefixer -o app/app.css app/app.css",
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
-    "precommit": "yarn test",
-    "prepush": "yarn test",
-    "babel-node": "babel-node src/js/app.js"
+    "babel-node": "babel-node src/js/app.js",
+    "ug": "uglifyjs app/bundle.js --compress --mangle --output app/bundle.min.js --source-map app/bundle.min.js.map"
   },
-  "main": "src/js/app.js"
+  "main": "src/app.js"
 }

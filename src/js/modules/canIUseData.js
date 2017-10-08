@@ -24,29 +24,22 @@
       });
     p1
       .then(canIUseData => {
+
         var titles= "";
-        //var ul = document.createElement("ul");
-        //canIData.appendChild(ul)
 
-        var catsCSS = canIUseData.cats.CSS;
-        //catsCSS.forEach(function(index,item) {
-        //  var cssList = '<li>' + index + ' ' + item + '</li>';
-        //  canIData.appendChild(ul);
-        //  ul.insertAdjacentHTML('afterbegin', cssList);
-        //});
-
-        for (let i in canIUseData.data) {
-          titles += "<div class='data__item'>"
-          titles += "<h5>" + canIUseData.data[i].title + "</h5>"
-          titles += "<p>" + canIUseData.data[i].description + "</p>"
-          titles += "<a href=" + canIUseData.data[i].links[0].url + ">" + canIUseData.data[i].links[0].url + "</a>"
-          titles += "</div>"
+        if (true) {
+          for (let i in canIUseData.data) {
+            titles += "<div class='data__item'>"
+            titles += "<h5>" + canIUseData.data[i].title + "</h5>"
+            titles += "<p>" + canIUseData.data[i].description + "</p>"
+            titles += "<a href=" + canIUseData.data[i].links[0].url + ">" + "link" + "</a>"
+            titles += "</div>"
+          }
         }
 
-          canIData.insertAdjacentHTML('afterbegin', titles);
+          canIData.innerHTML = titles;
 
         })
-      //.then(()=> canIData.insertAdjacentHTML('afterbegin', "<h1>Top Modern Features</h1>"))
   }
 
   clickBtn.addEventListener("click", init);
