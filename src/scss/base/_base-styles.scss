@@ -15,24 +15,15 @@ body {
   font-family: $font-family;
   color: $font-color;
   background-color: blanchedalmond;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
- /* h1, section {
-    -webkit-transition: color 1s ease;
-    -moz-transition: color 1s ease;
-    -ms-transition: color 1s ease;
-    -o-transition: color 1s ease;
-    transition: color 1s ease;
-  }
-  */
   &.night {
     background-color: black;
     color: white;
   }
+  &.overlay--open {
+    overflow: hidden;
+  }
 }
+
 
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
