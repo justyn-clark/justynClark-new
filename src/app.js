@@ -5,3 +5,4 @@ import './js/modules/handleClicks';
 import './js/modules/canIUseData';
 import './js/modules/input';
 import './js/modules/weirdCase';
+import './js/modules/randomNames';

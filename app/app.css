@@ -915,3 +915,8 @@ nav ul > li {
     overflow: hidden;
     background-color: bisque;
     border: 1px solid; }
+
+.randName {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: -2px; }

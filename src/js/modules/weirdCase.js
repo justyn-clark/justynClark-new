@@ -11,11 +11,11 @@ function toUpperLower(string) {
   return string.split('').map(getIndex).join('');
 };
 
-function toWeirdCase(text){
+export function toWeirdCase(text){
   return text.split(' ').map(function(val) {
     return toUpperLower(val)
   }).join(' ')
 
 }
 
-console.log(toWeirdCase('Weird string case'));
+document.querySelector('.randName').insertAdjacentHTML('beforebegin', '<div class="container text-center">' + toWeirdCase('Weird string case') + '</div>')

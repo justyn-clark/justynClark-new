@@ -47,14 +47,6 @@ var lus = numbers.map(function(x) {
 });
 console.log(lus);*/
 
-//for (var i = 0; i < x.length; i++) {
-//    var myStr = myStr[i];
-//}
-
-
-
-
-
 //console.log(3 % 2 == 0);
 //getEvenChars('justin')
 
