@@ -81,15 +81,17 @@
   };
 
   utils.openOverlay = () =>  {
-    const overlay = document.querySelector('.overlay');
+    var overlay = document.querySelector('.overlay');
+    var body = document.querySelector('body');
     overlay.classList.toggle('overlay--open');
-    console.log('overlay open');
+    body.classList.add('overlay--open');
   }
 
   utils.closeOverlay = () =>  {
-    const overlay = document.querySelector('.overlay');
-    overlay.classList.remove('overlay--open');
-    console.log('overlay closed');
+    var overlay = document.querySelector('.overlay');
+    var body = document.querySelector('body');
+    overlay.classList.toggle('overlay--open');
+    body.classList.toggle('overlay--open');
   }
 
   const loadNames = () => {
