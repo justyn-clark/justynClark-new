@@ -1,5 +1,5 @@
 (function (global) {
-  // Set up global variables
+
   global.JC = global.JC !== undefined ? JC : {};
 
   JC.config = {};

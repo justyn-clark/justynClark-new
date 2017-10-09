@@ -1,7 +1,7 @@
 'use strict';
 
 (function (global) {
-  // Set up global variables
+
   global.JC = global.JC !== undefined ? JC : {};
 
   JC.config = {};
@@ -60,31 +60,12 @@ var Batman = function () {
     })*/
 })(JC);
 "use strict";
-'use strict';
-
-(function (global, $) {
-  // Set up global variables
-  global.JC = global.JC !== undefined ? JC : {};
-
-  $('.poo');
-  JC.config = {};
-  JC.utils = {};
-  JC.components = {};
-  JC.menu = {};
-
-  global.EVT = new EventEmitter2();
-
-  global.addEventListener('DOMContentLoaded', function () {
-    EVT.emit('init');
-  });
-})(window, jQuery);
 "use strict";
 'use strict';
 
 (function (JC) {
 
   var canIData = document.querySelector('.canIData');
-  var clickBtn = document.querySelector('[rel="main__clicker"]');
 
   function init() {
     var p1 = new Promise(function (resolve) {
@@ -99,22 +80,13 @@ var Batman = function () {
         if (request.readyState === 4 && request.status === 200) {
           var canIUseData = JSON.parse(request.responseText);
           resolve(canIUseData);
-          console.log(canIUseData.data);
         }
       };
       request.send();
     });
     p1.then(function (canIUseData) {
-      var titles = "";
-      //var ul = document.createElement("ul");
-      //canIData.appendChild(ul)
 
-      var catsCSS = canIUseData.cats.CSS;
-      //catsCSS.forEach(function(index,item) {
-      //  var cssList = '<li>' + index + ' ' + item + '</li>';
-      //  canIData.appendChild(ul);
-      //  ul.insertAdjacentHTML('afterbegin', cssList);
-      //});
+      var titles = "";
 
       for (var i in canIUseData.data) {
         titles += "<div class='data__item'>";
@@ -126,15 +98,12 @@ var Batman = function () {
 
       canIData.insertAdjacentHTML('afterbegin', titles);
     });
-    //.then(()=> canIData.insertAdjacentHTML('afterbegin', "<h1>Top Modern Features</h1>"))
   }
-
-  clickBtn.addEventListener("click", init);
 
   if ("Promise" in window) {
     // Check for Promise on window
     console.log('Promises are supported');
-    EVT.on("init", init);
+    //EVT.on("init", init);
   } else {
     console.log('Your browser doesn\'t support the <code>Promise<code> interface.');
   }
@@ -208,8 +177,7 @@ var adder = function () {
     };
   };
   return {
-    adder1: plus(),
-    adder2: plus()
+    adder1: plus()
   };
 }();
 "use strict";
@@ -236,51 +204,63 @@ var ns = ns !== undefined ? ns : {};
 
   var dataFeed = JC.dataFeed = {};
 
-  var postsFeed = function postsFeed() {
+  var $mainDIv = $('.posts-feed');
 
-    var $mainDIv = $('.posts-feed');
+  var getRepos = function getRepos() {
+    if (!localStorage.getItem('data')) {
 
-    $.getJSON("https://api.github.com/users/justyn-clark/repos", function (data) {
+      $.getJSON("https://api.github.com/users/justyn-clark/repos", function (data) {
 
-      dataFeed.dataLength = data.length;
+        dataFeed.dataLength = data.length;
 
-      //console.log(data)
+        localStorage.setItem('data', JSON.stringify(data));
 
-      localStorage.setItem('data', JSON.stringify(data));
+        for (var i = 0; i < dataFeed.dataLength; i++) {
 
-      for (var i = 0; i < dataFeed.dataLength; i++) {
+          var post = "<div class='posts-post'>" + "<div class='posts-image'></div>" + "<div class='posts-post-content'>" + "<a href='#' target='_blank'>" + "<div class='content-inner'>" + "<div class='content'>" + "<div class='posts-time'><p class='time'>" + data[i].name + "</p></div>" + "<div class='posts-subject'>" + "<h2>" + data[i].url + "</h2>" + "</div>" + "</div>" + "</div>" + "</a>" + "</div>" + "</div>";
 
-        var post = "<div class='posts-post'>" + "<div class='posts-image'></div>" + "<div class='posts-post-content'>" + "<a href='#' target='_blank'>" + "<div class='content-inner'>" + "<div class='content'>" + "<div class='posts-time'><p class='time'>" + data[i].name + "</p></div>" + "<div class='posts-subject'>" + "<h2>" + data[i].url + "</h2>" + "</div>" + "</div>" + "</div>" + "</a>" + "</div>" + "</div>";
+          $mainDIv.append(post);
+        }
+      });
+    } else {
+
+      var data = JSON.parse(localStorage.getItem('data'));
+
+      for (var i = 0; i < data.length; i++) {
+
+        var post = "<div class='posts-post'>" + "<div class='posts-image'></div>" + "<div class='posts-post-content'>" + "<a href=" + data[i].html_url + ">" + "<div class='content-inner'>" + "<div class='content'>" + "<div class='posts-time'><p class='time'>" + data[i].name + "</p></div>" + "<div class='posts-subject'>" + "</div>" + "</div>" + "</div>" + "</a>" + "</div>" + "</div>";
 
         $mainDIv.append(post);
       }
-    });
+      console.log("it should be reading the data");
+    }
   };
 
-  EVT.on('init', postsFeed);
+  EVT.on('init', getRepos);
 })(jQuery, JC);
-'use strict';
+/*
+(function(JC) {
 
-(function (JC) {
+  var form = document.querySelector('.form')
 
-  var form = document.querySelector('.form');
-
-  var answers = [];
+  const answers = []
 
   function inputFunc(e) {
-    e.preventDefault();
-    var inputValue = this.querySelector('[name=item]').value;
-    answers.push(inputValue);
+    e.preventDefault()
+    var inputValue = this.querySelector('[name=item]').value
+    answers.push(inputValue)
     //console.log(answers)
-    localStorage.setItem('answers', JSON.stringify(answers));
-    var answersObj = JSON.parse(localStorage.getItem('answers'));
+    localStorage.setItem('answers', JSON.stringify(answers))
+    var answersObj = JSON.parse(localStorage.getItem('answers'))
     console.log(answersObj);
-    localStorage.setItem(JC.utils.randomNumber(), inputValue);
-    this.reset();
+    localStorage.setItem(JC.utils.randomNumber(), inputValue)
+    this.reset()
   }
-  //const submitBtn = document.querySelector('.form__submit')
-  form.addEventListener('submit', inputFunc);
+//const submitBtn = document.querySelector('.form__submit')
+  form.addEventListener('submit', inputFunc)
 })(JC);
+*/
+"use strict";
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -314,12 +294,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
     return cookieMap;
   };
-
   utils.getCookie = function (c, update) {
     // Get cookie
     return undefined.getCookies(update)[c];
   };
-
   utils.setCookie = function (name, value, opts) {
     // Set cookie JC.utils.setCookie('jcCookie',true, {expireDate: (3600 * 24 * 365)});
     var value = encodeURI(value);
@@ -340,15 +318,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   utils.thisCheck = function () {
     console.log(this);
   };
-
   utils.randomNumber = function () {
     return Math.floor(Math.random() * 1000);
   };
-
   utils.output = function (x) {
     console.log(x);
   };
-
   // Character count in Element
   utils.charsInElement = function (elm) {
     if (elm.nodeType == 3) {
@@ -361,12 +336,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
     return count;
   };
-
   // Alert utility
   utils.alert = function (a) {
     alert(a);
   };
-
   utils.showBodyCharNum = function () {
     var elm = document.querySelector('body');
     console.log("This page has " + utils.charsInElement(elm) + " characters in the body");
@@ -374,13 +347,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   utils.openOverlay = function () {
     var overlay = document.querySelector('.overlay');
+    //overlay.style.display = 'block';
+    //overlay.style.opacity = .9;
+    //overlay.style.display = "fixed";
     overlay.classList.toggle('overlay--open');
     console.log('overlay open');
   };
 
   utils.closeOverlay = function () {
     var overlay = document.querySelector('.overlay');
-    overlay.classList.remove('overlay--open');
+    //overlay.style.display = '';
+    //overlay.style.opacity = 0;
+    //overlay.style.opacity = 0;
+    //overlay.style.display = "";
+    overlay.classList.toggle('overlay--open');
     console.log('overlay closed');
   };
 
@@ -395,11 +375,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     request.onreadystatechange = function () {
       if (request.readyState === 4 && request.status === 200) {
         var data = JSON.parse(request.responseText);
-        console.log(data);
-        localStorage.setItem('data', JSON.stringify(data));
+        //console.log(data);
+        localStorage.setItem('users', JSON.stringify(data));
 
         for (var i = 0; i < data.length; i++) {
-          console.log(data[i].name);
+          //console.log(data[i].name)
 
           var names = data[i].name + "<br>" + data[i].email;
         }
@@ -423,7 +403,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     document.querySelector('[rel="main__loadNames"]').addEventListener('click', loadNames); // load ajax
     document.querySelector('[rel="main__clicker"]').addEventListener('click', function () {
       document.querySelector('[rel="main__clicker"]').innerHTML = adder.adder1();
-      console.log(adder.adder2());
     });
     document.querySelector('.cookie-policy__close').addEventListener('click', cookieSetter); // Cookie Policy
   };
@@ -437,20 +416,31 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
   }, 1000);
 
-  // init function
-  var init = function init() {};
-
   EVT.on('init', clickHandlers);
   EVT.on('init', loadNames);
-
-  return JC;
 })(JC);
+'use strict';
 
-{
-  var code = "</code>";
-  //console.log(`I'm executing ${code} immediately!`);
-}
-"use strict";
+(function (JC) {
+
+  var form = document.querySelector('.form');
+
+  var answers = [];
+
+  function inputFunc(e) {
+    e.preventDefault();
+    var inputValue = this.querySelector('[name=item]').value;
+    answers.push(inputValue);
+    //console.log(answers)
+    localStorage.setItem('answers', JSON.stringify(answers));
+    var answersObj = JSON.parse(localStorage.getItem('answers'));
+    console.log(answersObj);
+    localStorage.setItem(JC.utils.randomNumber(), inputValue);
+    this.reset();
+  }
+  //const submitBtn = document.querySelector('.form__submit')
+  form.addEventListener('submit', inputFunc);
+})(JC);
 
 var x = "yes";
 

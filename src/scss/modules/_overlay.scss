@@ -1,18 +1,23 @@
 .overlay {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: black;
   opacity:0;
-  transition: opacity .4s ease;
+  z-index: 500;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+
   &.overlay--open {
-    position: fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left: 0;
-    width:100%;
-    height:100%;
-    background-color: black;
-    opacity:.9;
-    z-index: 500;
-    transition: opacity .4s ease;
+    opacity: .9;
+    height: 100%;
+    width: 100%;
   }
     .overlay__inner { }
 }

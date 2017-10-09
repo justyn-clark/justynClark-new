@@ -1,3 +1,4 @@
+/*
 (function(JC) {
 
   var form = document.querySelector('.form')
@@ -18,3 +19,4 @@
 //const submitBtn = document.querySelector('.form__submit')
   form.addEventListener('submit', inputFunc)
 })(JC);
+*/

@@ -7,7 +7,6 @@ const adder = (function() {
     }
   }
   return {
-    adder1: plus(),
-    adder2: plus()
+    adder1: plus()
   }
 })()

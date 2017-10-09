@@ -25,11 +25,9 @@
     }
     return cookieMap;
   };
-
   utils.getCookie = (c, update) => { // Get cookie
     return this.getCookies(update)[c];
   };
-
   utils.setCookie = (name, value, opts) => { // Set cookie JC.utils.setCookie('jcCookie',true, {expireDate: (3600 * 24 * 365)});
     var value = encodeURI(value);
     opts = opts || {};
@@ -49,15 +47,12 @@
   utils.thisCheck = function() {
     console.log(this);
   }
-
   utils.randomNumber = function() {
     return Math.floor(Math.random() * 1000)
   };
-
   utils.output = function(x) {
     console.log(x);
   }
-
   // Character count in Element
   utils.charsInElement = elm => {
     if (elm.nodeType == 3) { // TEXT_NODE
@@ -69,26 +64,31 @@
     }
     return count;
   }
-
   // Alert utility
   utils.alert = a => {
     alert(a);
   }
-
   utils.showBodyCharNum = () => {
     var elm = document.querySelector('body');
     console.log("This page has " + utils.charsInElement(elm) + " characters in the body");
   };
 
   utils.openOverlay = () =>  {
-    const overlay = document.querySelector('.overlay');
+    var overlay = document.querySelector('.overlay');
+    //overlay.style.display = 'block';
+    //overlay.style.opacity = .9;
+    //overlay.style.display = "fixed";
     overlay.classList.toggle('overlay--open');
     console.log('overlay open');
   }
 
   utils.closeOverlay = () =>  {
-    const overlay = document.querySelector('.overlay');
-    overlay.classList.remove('overlay--open');
+    var overlay = document.querySelector('.overlay');
+    //overlay.style.display = '';
+    //overlay.style.opacity = 0;
+    //overlay.style.opacity = 0;
+    //overlay.style.display = "";
+    overlay.classList.toggle('overlay--open');
     console.log('overlay closed');
   }
 
@@ -103,11 +103,11 @@
     request.onreadystatechange = function() {
       if ((request.readyState === 4) && (request.status === 200)) {
         var data = JSON.parse(request.responseText);
-        console.log(data);
-        localStorage.setItem('data', JSON.stringify(data));
+        //console.log(data);
+        localStorage.setItem('users', JSON.stringify(data));
 
         for(let i = 0; i < data.length; i++){
-          console.log(data[i].name)
+          //console.log(data[i].name)
 
           var names = data[i].name + "<br>" + data[i].email;
 
@@ -133,7 +133,6 @@
     document.querySelector('[rel="main__loadNames"]').addEventListener('click', loadNames); // load ajax
     document.querySelector('[rel="main__clicker"]').addEventListener('click', function() {
       document.querySelector('[rel="main__clicker"]').innerHTML = adder.adder1()
-      console.log(adder.adder2());
     });
     document.querySelector('.cookie-policy__close').addEventListener('click', cookieSetter); // Cookie Policy
   }
@@ -147,20 +146,8 @@
      }
   },1000);
 
-  // init function
-    var init = () => {}
 
   EVT.on('init', clickHandlers)
   EVT.on('init', loadNames)
 
-  return JC;
-
 })(JC);
-
-
-
-
-{
-let code = "</code>";
-//console.log(`I'm executing ${code} immediately!`);
-}
