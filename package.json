@@ -35,11 +35,11 @@
     "start": "npm-run-all -p sync watch:css bundle",
     "test": "eslint src/js",
     "sync": "browser-sync start --server --files \"*.html, app/bundle.js, app/app.css\"",
-    "build:css": "node-sass --include-path scss src/**/*.scss app/app.css",
+    "build:css": "node-sass --include-path scss src/**/*.scss app/app.css --source-map-embed --source-map-contents --output-style compressed",
     "build": "npm run bundle && npm run build:css",
     "bundle": "watchify src/app.js -d -t [ babelify  --presets [ env ] ] --outfile app/bundle.js -v",
     "postcss": "postcss --use autoprefixer -o app/app.css app/app.css",
-    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "watch:css": "nodemon -e scss -x \"npm-run-all build:css postcss\"",
     "babel-node": "babel-node src/js/app.js",
     "ug": "uglifyjs app/bundle.js --compress --mangle --output app/bundle.min.js --source-map app/bundle.min.js.map"
   },
