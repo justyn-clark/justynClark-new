@@ -1,16 +1,27 @@
 import { setPolicyCookie } from './cookies';
 import { loadNames } from './loadNames';
+import { youTubePlayer } from './utils';
+
+var x = youTubePlayer('RKYjdTiMkXM');
 
 // Set up click handlers
-export const clickHandlers = () => {
+function clickHandlers() {
+
   var adder = JC.utils.adder();
+  var openOverlay = document.querySelector('[rel="main__openOverlay"]');
+  var overlay = document.querySelector('.overlay')
+
   document.querySelector('[rel="main__loadNames"]').addEventListener('click', loadNames);
-  document.querySelector('[rel="main__openOverlay"]').addEventListener('click', JC.utils.openOverlay); // open overlay
-  document.querySelector('.overlay').addEventListener('click', JC.utils.closeOverlay); // close overlay
+
   document.querySelector('[rel="main__clicker"]').addEventListener('click', function() {
     document.querySelector('[rel="main__clicker"]').innerHTML = adder();
   });
+
   document.querySelector('.cookie-policy__close').addEventListener('click', setPolicyCookie); // Cookie Policy
+
+  overlay.addEventListener('click', JC.utils.closeOverlay); // close overlay
+  openOverlay.addEventListener('click', JC.utils.openOverlay); // open overlay
+  openOverlay.addEventListener('click', x); // open overlay
 }
 
 EVT.on('init', clickHandlers);

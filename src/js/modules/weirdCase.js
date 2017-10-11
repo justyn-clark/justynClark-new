@@ -18,4 +18,4 @@ export function toWeirdCase(text){
 
 }
 
-document.querySelector('.randName').insertAdjacentHTML('beforebegin', '<div class="container text-center">' + toWeirdCase('Weird string case') + '</div>')
+//document.querySelector('.randName').insertAdjacentHTML('beforebegin', '<div class="">' + toWeirdCase('Weird string case') + '</div>')

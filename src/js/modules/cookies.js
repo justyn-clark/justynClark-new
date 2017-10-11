@@ -43,7 +43,7 @@ setTimeout(()=> {
   }
 },1000);
 
-export const setPolicyCookie = () => {
+export function setPolicyCookie() {
   document.querySelector('.cookie-policy').classList.add('cookie-policy--hide');
   console.log('cookie set');
   JC.utils.setCookie('jcCookie', true, {expireDate: (3600 * 24 * 365)});

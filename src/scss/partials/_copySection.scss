@@ -1,5 +1,14 @@
 [rel="copySection"] {
-  text-align: center;
-  //font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: left;
+  grid-column: 1/6;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
+  @media screen and (min-width: 960px) {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
 }

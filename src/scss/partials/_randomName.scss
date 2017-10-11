@@ -2,4 +2,31 @@
   font-size: 5rem;
   font-weight: bold;
   letter-spacing: -2px;
+  text-align: center;
+}
+
+.person,
+.data__item {
+  text-align: left;
+  display: block;
+  margin-bottom: 3rem;
+  line-height: 1.3;
+
+  h5 {
+    font-size: 1.7rem;
+    color: tomato;
+    + p {
+      font-size: 1.2rem;
+      color: #4F4D3F;
+      display: none;
+      + i {
+        font-size: 1rem;
+      }
+    }
+    &:hover {
+      + p {
+        //display: block;
+      }
+    }
+  }
 }
