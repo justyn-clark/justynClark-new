@@ -1,7 +1,6 @@
 (function() {
 
   var canIData = document.querySelector('.canIData');
-  //var clickBtn = document.querySelector('[rel="main__clicker"]');
 
   function init() {
     var p1 = new Promise(
@@ -40,8 +39,6 @@
       })
 
   }
-
-  //clickBtn.addEventListener("click", init);
 
   if ("Promise" in window) {   // Check for Promise on window
     console.log('Promises are supported');

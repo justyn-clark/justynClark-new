@@ -17,5 +17,3 @@ export function toWeirdCase(text){
   }).join(' ')
 
 }
-
-//document.querySelector('.randName').insertAdjacentHTML('beforebegin', '<div class="">' + toWeirdCase('Weird string case') + '</div>')
