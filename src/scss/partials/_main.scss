@@ -2,7 +2,7 @@
   width: 100%;
   margin: auto;
   text-align: center;
-  display: grid;
+  // display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
   .main__logo {
@@ -16,6 +16,10 @@
   .form,
   .counter {
     grid-column: 1/6;
+  }
+  .message {
+    text-align: center;
+    font-size: 3rem;
   }
 }
 

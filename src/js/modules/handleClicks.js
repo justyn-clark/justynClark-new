@@ -24,5 +24,5 @@ function clickHandlers() {
   openOverlay.addEventListener('click', x); // open overlay
 }
 
-EVT.on('init', clickHandlers);
+//EVT.on('init', clickHandlers);
 
