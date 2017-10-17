@@ -18,7 +18,7 @@
   &.overlay--open {
     visibility: visible;
     opacity: .9;
-    z-index: 20;
+    z-index: 999;
   }
 }
 

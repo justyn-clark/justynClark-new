@@ -1,6 +1,6 @@
 (function() {
 
-  var canIData = document.querySelector('.canIData');
+  var canIData = document.querySelector('.sidebar');
 
   function init() {
     var p1 = new Promise(
@@ -42,7 +42,7 @@
 
   if ("Promise" in window) {   // Check for Promise on window
     console.log('Promises are supported');
-    EVT.on("init", init);
+    //EVT.on("init", init);
 
    } else {
      console.log('Your browser doesn\'t support the <code>Promise<code> interface.');

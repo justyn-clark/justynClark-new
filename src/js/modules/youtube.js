@@ -1,4 +1,4 @@
-const data = {
+JC.utils.data = {
   "kind": "youtube#playlistItemListResponse",
   "etag": "\"cbz3lIQ2N25AfwNr-BdxUVxJ_QY/hlcgIXDADC-q1FI1GPsKKNvovaM\"",
   "nextPageToken": "CBkQAA",

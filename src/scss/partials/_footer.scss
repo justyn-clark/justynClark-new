@@ -1,8 +1,8 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  .cookie-policy {
+
+}
+
+.cookie-policy {
     display: block;
     position: fixed;
     bottom: 0;
@@ -11,6 +11,7 @@
     padding: 1rem 0;
     transform: translateY(100%);
     z-index: 1;
+
     &.cookie-policy--show {
       position: fixed;
       transform: translateY(0);
@@ -29,8 +30,6 @@
       transition: transform 1s cubic-bezier(0, 0, 0.15, 1.01), -webkit-transform 1s cubic-bezier(0, 0, 0.15, 1.01);
     }
   }
-}
-
 .cookie-policy__close {
   $size: 20px;
   height: $size;
@@ -75,3 +74,6 @@
   max-width: 90%;
   margin: auto;
 }
+
+
+
