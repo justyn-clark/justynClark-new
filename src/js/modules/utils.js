@@ -80,7 +80,7 @@ export function coolFunk() {
 
 
 
-export function youTubePlayer(id) {
+JC.utils.youTubePlayer = (id) => {
 
       return function () {
 

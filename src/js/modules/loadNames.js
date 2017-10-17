@@ -12,8 +12,11 @@ export function loadNames() {
 
   request.onreadystatechange = function() {
     if ((request.readyState === 4) && (request.status === 200)) {
+
       var data = JSON.parse(request.responseText);
+
       localStorage.setItem('data', JSON.stringify(data));
+
       console.log(data);
 
       var names = '';

@@ -1,8 +1,12 @@
 import { setPolicyCookie } from './cookies';
 import { loadNames } from './loadNames';
-import { youTubePlayer } from './utils';
+//import { youTubePlayer } from './utils';
 
-var x = youTubePlayer('RKYjdTiMkXM');
+var videos = ['2fKGD9Mg1is','RKYjdTiMkXM'];
+
+
+
+var video = JC.utils.youTubePlayer();
 
 // Set up click handlers
 function clickHandlers() {
@@ -21,7 +25,7 @@ function clickHandlers() {
 
   overlay.addEventListener('click', JC.utils.closeOverlay); // close overlay
   openOverlay.addEventListener('click', JC.utils.openOverlay); // open overlay
-  openOverlay.addEventListener('click', x); // open overlay
+  openOverlay.addEventListener('click', video); // open overlay
 }
 
 EVT.on('init', clickHandlers);

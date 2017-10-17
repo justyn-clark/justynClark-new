@@ -14,8 +14,19 @@
 
   .main__buttons,
   .form,
-  .counter {
+  .counter,
+  .gallery-wrap {
     grid-column: 1/6;
+  }
+
+}
+.gallery-wrap {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
 

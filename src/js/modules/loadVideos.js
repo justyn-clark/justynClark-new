@@ -29,5 +29,5 @@ export function loadVideos() {
     }
   }
 
-  request.send();
+  //request.send();
 }
