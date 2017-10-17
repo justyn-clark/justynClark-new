@@ -67,28 +67,12 @@ JC.utils.closeOverlay = () =>  {
       vid.remove();
 }
 
-
-
-export function randNumGen(max) {
-  return Math.floor(Math.random() * max)
-};
-
-
-export function coolFunk() {
-  console.log('this love is taking a hold of me');
-};
-
-
-
-
-
 JC.utils.youTubePlayer = (id) => {
     return function () {
         var body = document.querySelector('body');
         var video__wrap = document.createElement('div');
         var videoWrapper = document.createElement('div');
         var iframeDiv = document.createElement('iFrame');
-
         iframeDiv.setAttribute('data-youtube-id', id);
         iframeDiv.setAttribute('src', 'https://www.youtube.com/embed/' + id + '?rel=0&amp;controls=0&amp');
         video__wrap.setAttribute('class', 'video__wrap');
@@ -96,12 +80,12 @@ JC.utils.youTubePlayer = (id) => {
         video__wrap.appendChild(videoWrapper);
         videoWrapper.appendChild(iframeDiv);
         body.appendChild(video__wrap);
-
         console.log('return');
       }
-
 };
 
-
+export function randNumGen(max) {
+  return Math.floor(Math.random() * max)
+};
 
 /*<iframe width="1280" height="720" src="https://www.youtube.com/embed/RKYjdTiMkXM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>*/
