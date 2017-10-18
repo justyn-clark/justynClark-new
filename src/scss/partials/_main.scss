@@ -59,7 +59,7 @@
       position: relative;
       width: auto;
     }
-  &.--open {
+  &.header--open {
     position: fixed;
     transform: translateY(0);
     transition: all 200ms ease;

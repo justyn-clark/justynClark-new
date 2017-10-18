@@ -24,10 +24,7 @@ body {
     color: white;
   }
   &.overlay--open {
-    overflow: hidden;
-    @media (#{$bp-larger-than-tablet}) {
-      overflow: inherit;
-    }
+    overflow-y: hidden;
   }
 }
 
