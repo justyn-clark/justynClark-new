@@ -58,27 +58,26 @@ JC.utils.closeOverlay = () =>  {
   var overlay = document.querySelector('.overlay');
   var body = document.querySelector('body');
   var overlayInner = document.querySelector('.overlay__inner');
-  var vid = document.querySelector('.video__wrap');
-  var vidwrp = document.querySelector('.videoWrapper');
+  var vid = document.querySelector('.video__modal');
       overlay.classList.toggle('overlay--open');
       body.classList.toggle('overlay--open');
       overlayInner.classList.toggle('overlay--open');
-      vidwrp.removeChild(vid);
+      body.removeChild(vid);
 }
 
 JC.utils.youTubePlayer = (id) => {
     return function () {
         var body = document.querySelector('body');
-        var video__wrap = document.createElement('div');
-        var videoWrapper = document.createElement('div');
+        var video__modal = document.createElement('div');
+        var iframeWrapper = document.createElement('div');
         var iframeDiv = document.createElement('iFrame');
             iframeDiv.setAttribute('data-youtube-id', id);
             iframeDiv.setAttribute('src', 'https://www.youtube.com/embed/' + id + '?rel=0&amp;controls=0&amp');
-            video__wrap.setAttribute('class', 'video__wrap');
-            videoWrapper.setAttribute('class', 'videoWrapper');
-            video__wrap.appendChild(videoWrapper);
-            videoWrapper.appendChild(iframeDiv);
-            body.appendChild(video__wrap);
+            video__modal.setAttribute('class', 'video__modal');
+            iframeWrapper.setAttribute('class', 'iframeWrapper');
+            video__modal.appendChild(iframeWrapper);
+            iframeWrapper.appendChild(iframeDiv);
+            body.appendChild(video__modal);
             console.log('return');
       }
 };

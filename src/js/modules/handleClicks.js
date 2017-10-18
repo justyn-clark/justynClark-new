@@ -1,7 +1,6 @@
 import { setPolicyCookie } from './cookies';
 import './youtube';
 
-
 export function play() {
   var videos = randTubeVid();
   var videoID = videos[JC.utils.randomNumber(videos.length)];
@@ -17,10 +16,8 @@ function randTubeVid() {
   return vidList;
 };
 
-
 // Set up click handlers
 function clickHandlers() {
-
   var header = document.querySelector('.header');
   var content1 = document.querySelector('.logo');
   var body = document.querySelector('body');
@@ -38,8 +35,7 @@ function clickHandlers() {
   content1.addEventListener('click', function () {
     header.classList.toggle('--open');
     body.classList.toggle('overlay--open');
-  })
+  });
 }
 
 EVT.on('init', clickHandlers);
-
