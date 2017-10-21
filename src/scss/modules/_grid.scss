@@ -1,28 +1,46 @@
 .container {
   display: grid;
   grid-template-areas:
+    "header"
+    "content-1"
+    "content-2"
+    "content-3"
+    "sidebar"
+    "footer";
+  @media (#{$bp-larger-than-tablet}) {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "header header header"
+      "sidebar content-1 content-1"
+      "sidebar content-2 content-3"
+      "footer footer footer";
+  }
+}
+
+.container-main {
+  display: grid;
+  grid-template-areas:
           "header"
           "content-1"
           "content-2"
           "content-3"
           "sidebar"
           "footer";
-
   @media (#{$bp-larger-than-tablet}) {
     display: grid;
-    //width: 100%;
-    //height: 600px;
-    //grid-template-columns: 200px 1fr 1fr;
-    //grid-template-rows: 80px 1fr 1fr 100px;
     grid-gap: 1rem;
     grid-template-areas:
-            "... header ..."
-            "sidebar content-1 content-1"
-            "sidebar content-2 content-3"
-            "footer footer footer";
+            "header"
+            "content-1"
+            "content-2"
+            "content-3"
+            "sidebar"
+            "footer";
   }
+}
 
-}// Grid Areas
+// Grid Areas
 .header {
   grid-area: header;
 }
@@ -45,3 +63,15 @@
   grid-area: footer;
 }
 
+
+// cover
+.cover {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh; // Always 100% of the viewport's height
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; // 5 rows
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; // 5 columns
+  grid-gap: 5px; // 5x5 works well for centering
+}

@@ -14,16 +14,16 @@ function youTubePlayer(id) {
   return function () {
     var body = qs('body');
     var video__modal = document.createElement('div');
+        video__modal.className = 'video__modal';
     var iframeWrapper = document.createElement('div');
+        iframeWrapper.className = 'iframeWrapper';
     var iframeDiv = document.createElement('iFrame');
         iframeDiv.setAttribute('data-youtube-id', id);
         iframeDiv.setAttribute('src', 'https://www.youtube.com/embed/' + id + '?rel=0&amp;controls=0&amp');
-        video__modal.setAttribute('class', 'video__modal');
-        iframeWrapper.setAttribute('class', 'iframeWrapper');
-        video__modal.appendChild(iframeWrapper);
-        iframeWrapper.appendChild(iframeDiv);
-        body.appendChild(video__modal);
-        console.log('YouTube video player is open');
+            video__modal.appendChild(iframeWrapper);
+            iframeWrapper.appendChild(iframeDiv);
+            body.appendChild(video__modal);
+            console.log('YouTube video player is open');
   }
 }
 

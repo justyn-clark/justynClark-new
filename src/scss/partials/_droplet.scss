@@ -1,11 +1,13 @@
 .droplet {
   background: mediumaquamarine;
   border-radius: 2% 70%;
-  margin: 0 auto;
+  //margin: 0 auto;
   width: 60px;
   height: 60px;
-  transition: all 3s;
-  animation: rotate 4s linear infinite;
+  transition: all 3s ease-out;
+  position: relative;
+  animation: rotate 5s linear infinite;
+  //animation: waves 3s linear infinite;
   @media (#{$bp-larger-than-tablet}) {
     width: 80px;
     height: 80px;
@@ -13,6 +15,13 @@
   @keyframes rotate {
     from {transform: rotate(0deg)}
     to {transform: rotate(360deg)}
+    0% {left: 45%}
+    50% {left: 50%}
+    100% {left: 45%}
+  }
+  @keyframes waves {
+    0% {left: 0}
+    100% {left: 400px}
   }
   &:hover {
     transform: rotate(1080deg);
