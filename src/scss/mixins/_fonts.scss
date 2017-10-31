@@ -1,0 +1,134 @@
+@mixin opensans-reg() {
+	font-family:$default-font-family;
+	font-size-adjust:0.42;
+	font-weight:normal;
+	font-style:normal;
+	text-rendering:optimizeLegibility;
+    @media screen and (max-width:$mobile-breakpoint-2) {
+		text-rendering:optimizeSpeed;
+	}
+}
+@mixin opensans-bold() {
+	@include opensans-reg();
+	font-weight:bold;
+}
+@mixin helvetica-reg() {
+	font-family:$secondary-font-family;
+	font-size-adjust:0.42;
+	font-weight:normal;
+	font-style:normal;
+	text-rendering:optimizeLegibility;
+    @media screen and (max-width:$mobile-breakpoint-2) {
+		text-rendering:optimizeSpeed;
+	}
+}
+
+
+@mixin bourgeois-reg() {
+  font-family:$default-font-family;
+  font-size-adjust:0.42;
+  font-weight:normal;
+  font-style:normal;
+  text-rendering:optimizeLegibility;
+  @media screen and (max-width:$mobile-breakpoint-2) {
+    text-rendering:optimizeSpeed;
+  }
+}
+@mixin bourgeois-bold() {
+  font-family:$headline-font-family;
+  font-size-adjust:0.42;
+  font-weight:bold;
+  font-style:normal;
+  text-rendering:optimizeLegibility;
+  @media screen and (max-width:$mobile-breakpoint-2) {
+    text-rendering:optimizeSpeed;
+  }
+}
+@mixin proxima-reg() {
+  font-family:$secondary-font-family;
+  font-weight:normal;
+  font-style:normal;
+  text-rendering:optimizeLegibility;
+  @media screen and (max-width:$mobile-breakpoint-2) {
+    text-rendering:optimizeSpeed;
+  }
+}
+@mixin proxima-bold() {
+  font-family:$secondary-headline-font-family;
+  font-weight:900;
+  font-style:normal;
+  text-rendering:optimizeLegibility;
+  @media screen and (max-width:$mobile-breakpoint-2) {
+    text-rendering:optimizeSpeed;
+  }
+}
+
+
+
+//  FONTS AND TYPOGRAPHY
+@mixin arial-reg() { font-family: Arial, Helvetica, sans-serif; font-size-adjust:0.42; font-weight:normal; font-style:normal; }
+@mixin opensans-reg() { font-family:"Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif; font-size-adjust:0.42; font-style:normal; }
+@mixin opensans-bold() { font-family:"Open Sans Condensed", Verdana, Arial, Helvetica, sans-serif; font-size-adjust:0.42; font-weight:bold; font-style:normal; }
+@mixin arvo-reg() { font-family:"Arvo", Verdana, Arial, Helvetica, sans-serif; font-size-adjust:0.42; font-style:normal; }
+@mixin arvo-bold() { font-family:"Arvo", Verdana, Arial, Helvetica, sans-serif; font-size-adjust:0.42; font-weight:bold; font-style:normal; }
+
+@mixin body-font() { @include arial-reg(); @include optimize-text(); }
+@mixin tout-font() { @include opensans-reg(); @include optimize-text(); }
+@mixin tout-font-bold() { @include opensans-bold(); @include optimize-text(); }
+@mixin special-font-bold() { @include opensans-bold(); @include optimize-text(); }
+
+
+@mixin sup($font-size: 20px) {
+  vertical-align: top;
+  font-size: $font-size;
+}
+
+@mixin body-text() {
+  @include body-font();
+  font-size: $body-font-size;
+  line-height: 1.7;
+}
+
+@mixin tout-header-font() {
+  font-size: $tout-header-size;
+  text-transform: uppercase;
+  @include tout-font-bold();
+  line-height: 1.2;
+}
+@mixin tout-body-text() {
+  @include body-font();
+  font-size: $tout-body-size;
+  line-height: 24px;
+}
+
+@mixin header-font() {
+  @include special-font-bold();
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+@mixin special-font() {
+  text-transform: uppercase;
+  @include special-font-bold();
+}
+
+@mixin top-nav-font() {
+  @include tout-font-bold();
+  text-transform: uppercase;
+  color: $gray;
+  padding: 15px;
+  font-size: $nav-size;
+  display: block;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+
+  &:hover {
+    color: #FFF;
+  }
+}
+
+// helpers
+@mixin optimize-text() {
+  @media screen and (max-width: 640px) { text-rendering: optimizeSpeed; }
+  @media screen and (min-width: 641px) { text-rendering: optimizeLegibility; }
+}

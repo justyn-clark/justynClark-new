@@ -1,0 +1,5 @@
+@mixin background-treatment($size: contain, $pos:"center center") {
+  background-size: $size;
+  background-position: $pos;
+  background-repeat: no-repeat;
+}

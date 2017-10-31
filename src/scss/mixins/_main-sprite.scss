@@ -1,0 +1,4 @@
+@mixin main-sprite($x,$y) {
+  background:url($sprite-img) no-repeat;
+  background-position:$x $y;
+}

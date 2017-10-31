@@ -1,0 +1,6 @@
+@mixin backface() {
+  -ms-backface-visibility       : hidden;
+  -webkit-backface-visibility	: hidden;
+  -moz-backface-visibility	    : hidden;
+  backface-visibility			: hidden;
+}

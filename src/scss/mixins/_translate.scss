@@ -1,0 +1,12 @@
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+@mixin translate3d($x, $y, $z: 0) {
+  -ms-transform: translate($x, $y);
+  @include transform(translate3d($x, $y, $z));
+}
+
+@mixin translate-center-h() {
+  -ms-transform: translate(-50%, 0);
+  @include translate3d(-50%, 0, 0);
+}

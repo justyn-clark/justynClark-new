@@ -1,0 +1,30 @@
+@mixin inner-container() {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto 40px;
+}
+
+$bg-color: #3bd5ce;
+$theme-accent: blue;
+$default-border-color: #3bd5ce;
+
+@mixin cta-button($bg-color: $theme-accent, $hover-bg-color: #3bd5ce, $default-font-color: #fff, $default-font-color: $theme-accent, $default-border-color: #3bd5ce, $hover-border-color: #3bd5ce) {
+  color: $default-font-color;
+  background: transparent;
+  border: 2px solid $default-border-color;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  display: inline-block;
+  font-weight: normal;
+  letter-spacing: 0.7px;
+  @include transition(all .5s ease);
+
+  &:hover {
+    color: $default-font-color;
+    background: $hover-bg-color;
+    border: 2px solid $hover-border-color;
+  }
+}

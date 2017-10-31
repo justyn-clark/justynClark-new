@@ -1,4 +1,4 @@
-/*function myAsyncFunction(url) {
+w/*function myAsyncFunction(url) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", url);

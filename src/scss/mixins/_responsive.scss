@@ -1,0 +1,15 @@
+@mixin mobile($rules) {
+  @include query($mobile-breakpoint, $rules);
+}
+@mixin landscape($rules) {
+  @include query($landscape-breakpoint, $rules);
+}
+@mixin tablet($rules) {
+  @include query($tablet-breakpoint, $rules);
+}
+
+@mixin query($minWidth, $rules) {
+  @media only screen and (max-width: $maxWidth) {
+    $rules: $rules;
+  }
+}
