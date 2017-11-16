@@ -14,6 +14,6 @@ import EventEmitter2 from 'eventemitter2';
     EVT.emit('init');
   });
 
-  console.log(JC);
+  //console.log(JC);
 
 })(window);

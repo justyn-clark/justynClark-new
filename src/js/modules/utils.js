@@ -1,5 +1,13 @@
 import './cookies';
 
+JC.utils.helpers = {
+  qs: (selector, scope) => (scope || document).querySelector(selector),
+  qsa: (selector, scope) => (scope || document).querySelectorAll(selector),
+  $on: (target, evt, callback, useCapture) => {
+    target.addEventListener(evt, callback, !!useCapture)
+  }
+}
+
 JC.utils.adder = ()=> {
   var plus = function() {
     var counter = 0;
@@ -93,7 +101,6 @@ export function youTubePlayer(id) {
 
         iframeDiv.setAttribute('data-youtube-id', id);
         iframeDiv.setAttribute('src', 'https://www.youtube.com/embed/' + id + '?rel=0&amp;controls=0&amp');
-
 
         video__wrap.setAttribute('class', 'video__wrap');
         videoWrapper.setAttribute('class', 'videoWrapper');

@@ -1,16 +1,23 @@
-import './js/modules/global';
+// Top Level Modules
+import './global';
 import './js/modules/config';
 import './js/modules/utils';
+// Application Modules
+import './js/modules/objectLitSwitch';
+import './js/modules/liftGame';
+
+
+//import './js/modules/input';
 //import './js/modules/objConstructor';
 //import './js/modules/handleClicks';
 //import './js/modules/canIUseData';
-import './js/modules/input';
 //import './js/modules/weirdCase';
-import './js/modules/randomNames';
+//import './js/modules/randomNames';
 //import './js/modules/countdown';
 //import './js/modules/fightingObjects';
-import './js/modules/reducer';
-import './js/modules/curry';
+//import './js/modules/reducer';
+//import './js/modules/curry';
+//import './js/modules/mapper';
 
 //import {loadVideos} from './js/modules/loadVideos';
 //EVT.on('init', loadVideos)

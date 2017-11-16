@@ -17,7 +17,7 @@ const canFight = (state) => ({
   }
 });
 
-const canShoot = (state) => ({
+export const canShoot = (state) => ({
   shoot(shot) {
     console.log(`${state.name} shoots ${shot}!`);
     state.mana--;
@@ -45,11 +45,10 @@ const shooter = (name) => {
 console.log(shooter());
 console.log(fighter());
 
-const villan = fighter('gonk', 'uptown');
-const tyson = fighter('tyson', 'the flip mode squad');
-console.log(villan);
-console.log(typeof canFight());
-console.log(typeof canFight);
+const gonk = fighter('gonk', 'uptown');
+const tyson = fighter('tyson', 'flip mode squad');
+console.log(gonk);
+console.log(tyson);
 
 //tyson.kick();
 //tyson.slap();
@@ -75,3 +74,9 @@ var tool = toolBox();
 //console.log(tool);
 //console.log(tool.click('clickity clack'));
 //console.log(tool.randNum());
+
+
+console.log(
+  tool
+ //tyson.punch()
+);
