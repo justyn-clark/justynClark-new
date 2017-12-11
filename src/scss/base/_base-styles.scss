@@ -4,6 +4,10 @@
 // html is set to 62.5% so that all the REM measurements throughout Skeleton
 // are based on 10px sizing. So basically 1.5rem = 15px :)
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -12,11 +16,10 @@ body {
   font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
   line-height: 1.6;
   font-family: $font-family;
-  width: 100%;
-  height: 100;
   color: $font-color;
-  background-color: #3b404e;
+  background-color: #dbdbdb;
   margin: 0;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   &.night {
     background-color: black;
@@ -27,7 +30,11 @@ body {
   }
 }
 
-
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
 
 
@@ -42,12 +49,3 @@ a {
   }
 }
 
-// Misc
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid $light-grey;
-}

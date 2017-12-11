@@ -8,24 +8,23 @@ JC.helpers = {
   }
 }
 
-
 JC.utils = {
-  adder() {
+  adder () {
     let increment = () => {
       let counter = 0;
-      return function() {
+      return function () {
         return counter = counter + 1;
       }
     }
     return increment()
   },
-  thisCheck() {
+  thisCheck () {
     console.log(this);
   },
-  randomNumber(len) {
+  randomNumber (len) {
     return Math.floor(Math.random() * len)
   },
-  interval(callback, time) {
+  interval (callback, time) {
     setInterval(callback, time)
   },
   output(x) {

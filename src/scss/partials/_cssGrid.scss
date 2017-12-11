@@ -1,0 +1,108 @@
+.social__block   {
+  display: flex;
+  height: 100vh;
+  ul {
+    display: grid;
+    height: 70vh;
+    background-color: #698196;
+    box-shadow: 12px 30px 78px -35px;
+
+    .item {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social__item:nth-child(1) {
+      //grid-area: 4/4;
+      padding: 1em;
+      text-align: center;
+      //background-color: brown;
+    }
+    .social__item:nth-child(2) {
+      //grid-area: 2/2;
+      padding: 1em;
+      text-align: center;
+      //background-color: #ffb25f;
+    }
+    .social__item:nth-child(3) {
+      //grid-area: 1/1;
+      padding: 1em;
+      text-align: center;
+      //background-color: #a7ffbc;
+    }
+    .social__item:nth-child(4) {
+      //grid-area: 3/3;
+      padding: 1em;
+      text-align: center;
+      //background-color: #a53ca5;
+    }
+    .social__item:nth-child(5) {
+      //grid-area: 3/3;
+      padding: 1em;
+      text-align: center;
+      //background-color: #a5772e;
+    }
+
+    @media screen and (min-width: 768px) {
+      grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+
+    }
+    @media screen and (min-width: 960px) {
+      grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    }
+
+
+    @media screen and (min-width: 960px) {
+      .social__item:nth-child(1) {
+        grid-area: 1/1;
+        padding: 1em;
+        text-align: center;
+        //background-color: brown;
+      }
+      .social__item:nth-child(2) {
+        grid-area: 3/3;
+        padding: 1em;
+        text-align: center;
+        //background-color: #ffb25f;
+      }
+      .social__item:nth-child(3) {
+        grid-area: 5/5;
+        padding: 1em;
+        text-align: center;
+        //background-color: #a7ffbc;
+      }
+      .social__item:nth-child(4) {
+        grid-area: 1/5;
+        padding: 1em;
+        text-align: center;
+        //background-color: #a53ca5;
+      }
+      .social__item:nth-child(5) {
+        grid-area: 5/1;
+        padding: 1em;
+        text-align: center;
+        //background-color: #a5772e;
+      }
+    }
+
+    i {
+      font-size: 10rem;
+    }
+  }
+}
+
+.social {
+  //width: 80%;
+  //height: 100vh;
+  margin: auto;
+  transform: rotate(-40deg);
+
+  .social__item {
+    a {
+      color: #dbdbdb;
+    }
+  }
+}
+
+

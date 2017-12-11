@@ -1,3 +1,20 @@
+function ajaxProm(url) {
+  let myFirstPromise = new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', url)
+    xhr.onreadystatechange = () => {
+      if ((xhr.readyState === 4) && (xhr.status === 200)) {
+        resolve(JSON.parse(xhr.responseText))
+      }
+    }
+    xhr.send()
+  });
+
+  myFirstPromise
+    .then((repos) => console.log(repos[2].name))
+    .catch((error) => console.log(error.message))
+}
+
 /*function myAsyncFunction(url) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
@@ -15,28 +32,7 @@
 };
 //console.log(myAsyncFunction('https://api.github.com/users/justyn-clark/repos'));
 myAsyncFunction('https://api.github.com/users/justyn-clark/repos');*/
-
-
-
-function ajaxProm(url) {
-  let myFirstPromise = new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.onreadystatechange = () => {
-      if ((xhr.readyState == 4) && (xhr.status == 200)) {
-          resolve(JSON.parse(xhr.responseText));
-      }
-    }
-    xhr.send();
-  });
-
-  myFirstPromise
-    .then((repos) => console.log(repos[2].name))
-    .catch((error) => console.log(error.message))
-}
-
-//ajaxProm('https://api.github.com/users/justyn-clark/repos');
-
+// ajaxProm('https://api.github.com/users/justyn-clark/repos')
 
 /*
 let myFirstPromise = new Promise((resolve, reject) => {

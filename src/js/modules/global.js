@@ -17,3 +17,9 @@ import EventEmitter2 from 'eventemitter2';
   console.log(JC);
 
 })(window);
+
+
+async function funkyFn() {
+  await "soap"
+}
+console.log(funkyFn());

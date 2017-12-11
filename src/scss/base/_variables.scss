@@ -1,6 +1,16 @@
 // Variables
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
+// CSS Grid
+$col-4: 1fr 1fr 1fr 1fr;
+$row-4: 1fr 1fr 1fr 1fr;
+$col-3: 1fr 1fr 1fr;
+$row-3: 1fr 1fr 1fr;
+$col-2: 1fr 1fr;
+$row-2: 1fr 1fr;
+
+
 // Breakpoints
 $bp-larger-than-mobile    : "min-width: 400px" !default;
 $bp-larger-than-phablet   : "min-width: 550px" !default;
@@ -30,3 +40,6 @@ $column-margin: 4% !default; // space between columns
 
 // Misc
 $global-radius: 3px !default;
+
+
+
